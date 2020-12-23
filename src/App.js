@@ -1,10 +1,12 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Nav from './Components/Nav'
 
 const App = () => {
   return(
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Nav />
+    </Router>
   )
 }
 

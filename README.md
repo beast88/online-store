@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-###Description
+### Description
 
 A simple online store where you can browse the catalogue and add items to your cart.
 

@@ -1,3 +1,32 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Hepta Slab', serif;
+	color: #2C3E50;
+}
+
+a {
+	text-decoration: none;
+	color: #2C3E50;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+nav {
+	height: 15vh;
+	padding: 0 30px 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid pink;
+}
+
+nav .nav-list {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
