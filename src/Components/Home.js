@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 	return(
 		<div className="enter-shop">
-			<a href="#">Enter Shop</a>
+			<Link to="/shop">Enter Shop</Link>
 		</div>
 	)
 }
