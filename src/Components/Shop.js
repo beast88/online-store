@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Sofas from '../Assets/Sofas'
 
 const Shop = () => {
 	return(
@@ -11,7 +12,7 @@ const Shop = () => {
 					<li>Bookcases</li>
 					<li>Beds</li>
 				</ul>
-				
+
 			</aside>
 
 			<div className="shop-front">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Nav = () => {
+const Nav = (props) => {
 	return(
 		<nav>
 			<h1>Fakea</h1>
@@ -14,7 +14,8 @@ const Nav = () => {
 					<li>Shop</li>
 				</Link>
 
-				<li><a href="#"><i className="fa fa-shopping-bag"></i></a></li>
+				<li onClick={props.handleClick}><i className="fa fa-shopping-bag"></i></li>
+
 				<li>
 					<a href="https://github.com/beast88/online-store" target="_blank" rel="noreferrer">
 						<i className="fa fa-github"></i>
