@@ -16,8 +16,6 @@ const App = () => {
     setCartOptions((prevCartOptions) => {
       return {...prevCartOptions, visible: true}
     })
-
-    console.log(cartOptions)
   }
 
   const handleCloseCart = () => {

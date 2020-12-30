@@ -1,21 +1,53 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Products from '../Assets/Products'
+import Categories from '../Assets/Categories'
+import Catalogue from './Catalogue'
 
 const Shop = () => {
+	const [catId, setCatId] = useState(0)
+	const [filteredProducts, setFilteredProducts] = useState([])
+
+	const handleClick = (id) => {
+		setCatId(id)
+		productFilter(id)
+	}
+
+	const productFilter = (id) => {
+		if(id === 0){
+			setFilteredProducts(Products)
+		} else {
+			setFilteredProducts(Products.filter(product => {
+				return product.categoryid === id
+			}))
+		}
+	}
+
+	useEffect(() => {
+		productFilter(catId)
+	}, [])
+
 	return(
 		<main className="shop-container">
 			<aside className="nav-container">
 
 				<ul className="shop-nav">
-					<li>Sofas</li>
-					<li>Tables</li>
-					<li>Bookcases</li>
-					<li>Beds</li>
+					{
+						Categories.map(category => {
+							return <li key={category.id} onClick={() => handleClick(category.id)}>
+								{category.name}
+							</li>
+						})
+					}
 				</ul>
 
 			</aside>
 
 			<div className="shop-front">
-				<h1>Store Items go here</h1>
+			{
+				filteredProducts.map(product => {
+					return <Catalogue key={product.id} item={product}/>
+				})
+			}				
 			</div>
 		</main>
 	)
