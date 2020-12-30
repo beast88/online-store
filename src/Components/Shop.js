@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Sofas from '../Assets/Sofas'
 
 const Shop = () => {
 	return(
