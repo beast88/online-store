@@ -157,8 +157,23 @@ nav .nav-list {
 }
 
 .shop-nav li {
-	margin-bottom: 8px;
+	margin-bottom: 5px;
+	padding: 8px;
 	font-size: 1.2rem;
+
+	transition: all .2s ease-in-out;
+}
+
+.shop-nav li:hover {
+	cursor: pointer;
+
+	transform: scale(1.2);
+}
+
+.shop-nav .selected {
+	transform: scale(1.2);
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
 }
 
 .shop-front {
@@ -179,6 +194,10 @@ nav .nav-list {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.product-card:hover {
+	cursor: pointer;
 }
 
 .product-card img {

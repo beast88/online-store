@@ -34,7 +34,11 @@ const Shop = () => {
 				<ul className="shop-nav">
 					{
 						Categories.map(category => {
-							return <li key={category.id} onClick={() => handleClick(category.id)}>
+							return <li 
+								key={category.id} 
+								onClick={() => handleClick(category.id)}
+								className={category.id === catId ? "selected" : ""}
+							>
 								{category.name}
 							</li>
 						})
