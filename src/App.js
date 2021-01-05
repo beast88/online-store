@@ -4,6 +4,7 @@ import Nav from './Components/Nav'
 import Home from './Components/Home'
 import Shop from './Components/Shop'
 import Cart from './Components/Cart'
+import Product from './Components/Product'
 
 const App = () => {
   const [cartOptions, setCartOptions] = useState({
@@ -31,7 +32,8 @@ const App = () => {
       <Switch>
 
         <Route exact path="/" component={Home} />
-        <Route path="/shop" component={Shop} />
+        <Route exact path="/shop" component={Shop} />
+        <Route path="/shop/:id" component={Product} />
 
       </Switch>
 

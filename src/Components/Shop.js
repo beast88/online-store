@@ -50,7 +50,7 @@ const Shop = () => {
 			<div className="shop-front">
 				{
 					filteredProducts.map(product => {
-						return <Catalogue key={product.id} item={product}/>
+						return <Link key={product.id} to={`/shop/${product.id}`}><Catalogue key={product.id} item={product}/></Link>
 					})
 				}				
 			</div>
