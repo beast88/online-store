@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Products from '../Assets/Products'
 import Categories from '../Assets/Categories'
 import Catalogue from './Catalogue'
+import { Link } from 'react-router-dom'
 
 const Shop = () => {
 	const [catId, setCatId] = useState(0)
@@ -43,11 +44,11 @@ const Shop = () => {
 			</aside>
 
 			<div className="shop-front">
-			{
-				filteredProducts.map(product => {
-					return <Catalogue key={product.id} item={product}/>
-				})
-			}				
+				{
+					filteredProducts.map(product => {
+						return <Catalogue key={product.id} item={product}/>
+					})
+				}				
 			</div>
 		</main>
 	)
