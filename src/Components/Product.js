@@ -39,6 +39,8 @@ const Product = (props) => {
 
 						</div>
 
+						<button>Add to Cart</button>
+
 					</div>
 				</div>
 

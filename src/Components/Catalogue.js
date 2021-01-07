@@ -3,7 +3,7 @@ import React from 'react'
 const Catalogue = (props) => {
 
 	return (
-		<span className="product-card" style={{'display': 'block'}}>
+		<span className="product-card">
 			<img src={props.item.image} alt={props.item.name} />
 
 			<div className="card-details">
