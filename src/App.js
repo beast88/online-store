@@ -27,14 +27,18 @@ const App = () => {
     })
   }
 
-  const increment = (e) => {
+  const increment = () => {
     setQuant(quant + 1)
   }
 
-  const decrement = (e) => {
+  const decrement = () => {
     if(quant > 1) {
       setQuant(quant - 1)
     }
+  }
+
+  const resetQuant = () => {
+    setQuant(1)
   }
 
   return(
@@ -50,7 +54,8 @@ const App = () => {
                                     {...props} 
                                     quant={quant}
                                     increment={increment}
-                                    decrement={decrement} 
+                                    decrement={decrement}
+                                    resetQuant={resetQuant} 
                                   />
                                 )} />
 

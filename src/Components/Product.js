@@ -11,6 +11,7 @@ const Product = (props) => {
 
 	useEffect(() => {
 		getItem()
+		props.resetQuant()
 	}, [])
 
 	const [item, setItem] = useState({})
