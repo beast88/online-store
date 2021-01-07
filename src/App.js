@@ -13,6 +13,8 @@ const App = () => {
     items: []
   })
 
+  const [quant, setQuant] = useState(1)
+
   const handleCartClick = () => {
     setCartOptions((prevCartOptions) => {
       return {...prevCartOptions, visible: true}
@@ -25,6 +27,16 @@ const App = () => {
     })
   }
 
+  const increment = (e) => {
+    setQuant(quant + 1)
+  }
+
+  const decrement = (e) => {
+    if(quant > 1) {
+      setQuant(quant - 1)
+    }
+  }
+
   return(
     <Router>
       <Nav handleClick={handleCartClick} cartLength={cartOptions.length} />
@@ -33,7 +45,14 @@ const App = () => {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/shop" component={Shop} />
-        <Route path="/shop/:id" component={Product} />
+        <Route path="/shop/:id" render={(props) => (
+                                  <Product 
+                                    {...props} 
+                                    quant={quant}
+                                    increment={increment}
+                                    decrement={decrement} 
+                                  />
+                                )} />
 
       </Switch>
 
