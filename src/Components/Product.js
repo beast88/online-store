@@ -27,21 +27,21 @@ const Product = (props) => {
 
 				<div className="details">
 					<h3>{item.name}</h3>
-					<h3>{item.price}</h3>
+					<h6>{item.price}</h6>
+				</div>
 
-					<div className="add-to-cart">
+				<div className="add-to-cart">
 
-						<div className="buttons-controller">
+					<div className="buttons-controller">
 
-							<button onClick={props.decrement}>-</button>
-							<h6>{props.quant}</h6>
-							<button onClick={props.increment}>+</button>
-
-						</div>
-
-						<button>Add to Cart</button>
+						<button onClick={props.decrement}>-</button>
+						<h6>{props.quant}</h6>
+						<button onClick={props.increment}>+</button>
 
 					</div>
+
+					<button className="submit">Add to Cart</button>
+
 				</div>
 
 			</div>
