@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Products from '../Assets/Products'
+import { Link } from 'react-router-dom'
 
 const Product = (props) => {
 
@@ -40,7 +41,7 @@ const Product = (props) => {
 
 					</div>
 
-					<button className="submit">Add to Cart</button>
+					<Link to={"/shop"}><button className="submit" onClick={() => {props.addToCart(item)}}>Add to Cart</button></Link>
 
 				</div>
 

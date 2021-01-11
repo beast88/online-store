@@ -4,6 +4,8 @@ const Cart = (props) => {
 
 	const hidden = props.cartOptions.visible === false ? "cart-bg hidden" : "cart-bg"
 
+	console.log(props.cartOptions)
+
 	return(
 		<div className={hidden}>
 			<div className="cart-container">

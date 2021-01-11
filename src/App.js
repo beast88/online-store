@@ -41,6 +41,21 @@ const App = () => {
     setQuant(1)
   }
 
+  const addToCart = (item) => {
+    let i = quant
+
+    while(i > 0) {
+      setCartOptions((prevCartOptions) => {
+        return {...prevCartOptions,
+                length: prevCartOptions.length + 1,
+                items: [...prevCartOptions.items, item]
+                }
+      })
+
+      i--
+    }
+  }
+
   return(
     <Router>
       <Nav handleClick={handleCartClick} cartLength={cartOptions.length} />
@@ -55,7 +70,8 @@ const App = () => {
                                     quant={quant}
                                     increment={increment}
                                     decrement={decrement}
-                                    resetQuant={resetQuant} 
+                                    resetQuant={resetQuant}
+                                    addToCart={addToCart} 
                                   />
                                 )} />
 
