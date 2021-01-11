@@ -90,7 +90,13 @@ nav .nav-list {
 	background: white;
 }
 
-.cart-container i {
+.cart-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cart-header i {
 	font-size: 1.4rem;
 	cursor: pointer;
 }

@@ -8,7 +8,7 @@ const Catalogue = (props) => {
 
 			<div className="card-details">
 				<h4>{props.item.name}</h4>
-				<h6>{props.item.price}</h6>
+				<h6>{`£${props.item.price}`}</h6>
 			</div>
 		</span>
 	)

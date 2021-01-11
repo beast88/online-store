@@ -28,7 +28,7 @@ const Product = (props) => {
 
 				<div className="details">
 					<h3>{item.name}</h3>
-					<h6>{item.price}</h6>
+					<h6>{`£${item.price}`}</h6>
 				</div>
 
 				<div className="add-to-cart">

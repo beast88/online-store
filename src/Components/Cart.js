@@ -9,8 +9,20 @@ const Cart = (props) => {
 	return(
 		<div className={hidden}>
 			<div className="cart-container">
-				<h3>Shopping Cart</h3>
-				<i className="fa fa-times-circle" onClick={props.closeCart}></i>
+
+				<div className="cart-header">
+					<h3>Shopping Cart</h3>
+					<i className="fa fa-times-circle" onClick={props.closeCart}></i>
+				</div>
+
+				<div className="cart-contents">
+
+				</div>
+
+				<h6>Subtotal: </h6>
+
+				<button className="checkout-button">Proceed to Checkout</button>
+
 			</div>
 		</div>
 	)
