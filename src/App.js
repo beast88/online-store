@@ -15,6 +15,8 @@ const App = () => {
 
   const [quant, setQuant] = useState(1)
 
+  const [subtotal, setSubtotal] = useState(0)
+
   const handleCartClick = () => {
     setCartOptions((prevCartOptions) => {
       return {...prevCartOptions, visible: true}
@@ -52,6 +54,10 @@ const App = () => {
                 }
       })
 
+      setSubtotal((prevSubtotal) => {
+        return prevSubtotal + item.price
+      })
+
       i--
     }
   }
@@ -77,7 +83,7 @@ const App = () => {
 
       </Switch>
 
-      <Cart cartOptions={cartOptions} closeCart={handleCloseCart}/>
+      <Cart cartOptions={cartOptions} closeCart={handleCloseCart} subtotal={subtotal} />
 
     </Router>
   )

@@ -19,10 +19,11 @@ const Cart = (props) => {
 
 				</div>
 
-				<h6>Subtotal: </h6>
+				<h6>Subtotal: {`£${Math.round(props.subtotal * 100) / 100}`}</h6>
 
-				<button className="checkout-button">Proceed to Checkout</button>
-
+				<div className="checkout-button">
+					<button>Proceed to Checkout</button>
+				</div>
 			</div>
 		</div>
 	)
