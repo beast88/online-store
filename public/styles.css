@@ -105,8 +105,33 @@ nav .nav-list {
 .cart-contents {
 	width: 85%;
 	height: 80%;
-	border: 1px solid black;
 	margin-bottom: 10px;
+	overflow-y: auto;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid rgba(44, 62, 80, 0.5);
+}
+
+.cart-item img {
+	width: 175px;
+	height: 175px;
+	object-fit: contain;
+}
+
+.cart-item-details .item-name {
+	margin-bottom: 15px;
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+.cart-item i {
+	font-size: 1.2rem;
+	margin-right: 20px;
 }
 
 .checkout-button {

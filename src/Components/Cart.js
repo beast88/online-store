@@ -1,10 +1,9 @@
 import React from 'react'
+import CartItem from './CartItem'
 
 const Cart = (props) => {
 
 	const hidden = props.cartOptions.visible === false ? "cart-bg hidden" : "cart-bg"
-
-	console.log(props.cartOptions)
 
 	return(
 		<div className={hidden}>
@@ -16,6 +15,10 @@ const Cart = (props) => {
 				</div>
 
 				<div className="cart-contents">
+
+					{props.cartOptions.items.map((item, index) => {
+						return <CartItem key={index} item={item} id={index} />
+					})}
 
 				</div>
 
