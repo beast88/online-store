@@ -62,6 +62,23 @@ const App = () => {
     }
   }
 
+  const removeFromCart = (item, id) => {
+    const filteredItems = cartOptions.items.filter(function(product, index){
+      return id !== index
+    })
+
+    setCartOptions((prevCartOptions) => {
+      return {...prevCartOptions,
+              length: prevCartOptions.length - 1, 
+              items: filteredItems
+            }
+    })
+
+    setSubtotal((prevSubtotal) => {
+      return prevSubtotal - item.price
+    })
+  }
+
   return(
     <Router>
       <Nav handleClick={handleCartClick} cartLength={cartOptions.length} />
@@ -83,7 +100,7 @@ const App = () => {
 
       </Switch>
 
-      <Cart cartOptions={cartOptions} closeCart={handleCloseCart} subtotal={subtotal} />
+      <Cart cartOptions={cartOptions} closeCart={handleCloseCart} subtotal={subtotal} removeFromCart={removeFromCart} />
 
     </Router>
   )

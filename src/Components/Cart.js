@@ -17,7 +17,7 @@ const Cart = (props) => {
 				<div className="cart-contents">
 
 					{props.cartOptions.items.map((item, index) => {
-						return <CartItem key={index} item={item} id={index} />
+						return <CartItem key={index} item={item} id={index} removeFromCart={props.removeFromCart} />
 					})}
 
 				</div>

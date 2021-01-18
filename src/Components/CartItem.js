@@ -11,7 +11,7 @@ const CartItem = (props) => {
 				<p>{`£${props.item.price}`}</p>
 			</div>
 
-			<i className="fa fa-trash"></i>
+			<i className="fa fa-trash" onClick={() => {props.removeFromCart(props.item, props.id)}}></i>
 
 		</div>
 	)
