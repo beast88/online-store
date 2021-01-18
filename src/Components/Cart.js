@@ -3,11 +3,13 @@ import CartItem from './CartItem'
 
 const Cart = (props) => {
 
-	const hidden = props.cartOptions.visible === false ? "cart-bg hidden" : "cart-bg"
+	const hidden = props.cartOptions.visible === false ? "cart-bg fadeOut" : "cart-bg fadeIn"
+
+	const open = props.cartOptions.visible === false ? "cart-container closed" : "cart-container open"
 
 	return(
 		<div className={hidden}>
-			<div className="cart-container">
+			<div className={open}>
 
 				<div className="cart-header">
 					<h3>Shopping Cart</h3>
