@@ -85,7 +85,7 @@ const App = () => {
 
       <Switch>
 
-        <Route exact path="/" component={Home} />
+        <Route exact path="/online-store" component={Home} />
         <Route exact path="/shop" component={Shop} />
         <Route path="/shop/:id" render={(props) => (
                                   <Product 
