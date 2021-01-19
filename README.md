@@ -15,3 +15,22 @@ Part of The Odin Project section on React Routes located here:
 * Filter products by categories.
 * Add and remove products from the shopping  cart.
 * Simple and clean interface.
+
+## Development
+
+### Frameworks
+
+*React JS
+
+### Applied Skills
+
+* React Routes
+* React Hooks
+* Higher array methods
+* Simple CSS animations
+
+## Notes
+
+* The Proceed to Checkout button does not do anything as this was beyond the scope of this project
+* This page is unresponsive and is not optimised for mobile devices
+* This is personal project designed to go into a portfolio
