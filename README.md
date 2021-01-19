@@ -15,9 +15,3 @@ Part of The Odin Project section on React Routes located here:
 * Filter products by categories.
 * Add and remove products from the shopping  cart.
 * Simple and clean interface.
-
-### Screenshots
-
-Home Page
-
-![Alt text](/screenshots/Screenshot_2021-01-19_11.21.18.png "Home Page")
