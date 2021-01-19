@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.js": "/online-store/static/js/main.73cd8e34.chunk.js",
+    "main.js.map": "/online-store/static/js/main.73cd8e34.chunk.js.map",
+    "runtime-main.js": "/online-store/static/js/runtime-main.d8a1b7d0.js",
+    "runtime-main.js.map": "/online-store/static/js/runtime-main.d8a1b7d0.js.map",
+    "static/js/2.3d771749.chunk.js": "/online-store/static/js/2.3d771749.chunk.js",
+    "static/js/2.3d771749.chunk.js.map": "/online-store/static/js/2.3d771749.chunk.js.map",
+    "index.html": "/online-store/index.html",
+    "static/js/2.3d771749.chunk.js.LICENSE.txt": "/online-store/static/js/2.3d771749.chunk.js.LICENSE.txt",
+    "static/media/bed1.54559fc7.jpg": "/online-store/static/media/bed1.54559fc7.jpg",
+    "static/media/bed2.0fdb4819.jpg": "/online-store/static/media/bed2.0fdb4819.jpg",
+    "static/media/bed3.b605a0dc.jpg": "/online-store/static/media/bed3.b605a0dc.jpg",
+    "static/media/bed4.f1ebe616.jpg": "/online-store/static/media/bed4.f1ebe616.jpg",
+    "static/media/bed5.2fe8bee3.jpg": "/online-store/static/media/bed5.2fe8bee3.jpg",
+    "static/media/bed6.5c080964.jpg": "/online-store/static/media/bed6.5c080964.jpg",
+    "static/media/bed7.c71019fb.jpg": "/online-store/static/media/bed7.c71019fb.jpg",
+    "static/media/bookcase1.7fd5955c.jpg": "/online-store/static/media/bookcase1.7fd5955c.jpg",
+    "static/media/bookcase2.5503e63a.jpg": "/online-store/static/media/bookcase2.5503e63a.jpg",
+    "static/media/bookcase4.fa2bd5f4.jpg": "/online-store/static/media/bookcase4.fa2bd5f4.jpg",
+    "static/media/bookcase5.0837bc9a.jpg": "/online-store/static/media/bookcase5.0837bc9a.jpg",
+    "static/media/sofa1.298b3a79.jpg": "/online-store/static/media/sofa1.298b3a79.jpg",
+    "static/media/sofa2.080989b0.jpg": "/online-store/static/media/sofa2.080989b0.jpg",
+    "static/media/sofa3.e69b890f.jpg": "/online-store/static/media/sofa3.e69b890f.jpg",
+    "static/media/sofa4.e0572b74.jpg": "/online-store/static/media/sofa4.e0572b74.jpg",
+    "static/media/table1.36111da6.jpg": "/online-store/static/media/table1.36111da6.jpg",
+    "static/media/table2.dfeb16be.jpg": "/online-store/static/media/table2.dfeb16be.jpg",
+    "static/media/table3.0c43f959.jpg": "/online-store/static/media/table3.0c43f959.jpg",
+    "static/media/table4.50e94ae0.jpg": "/online-store/static/media/table4.50e94ae0.jpg",
+    "static/media/table5.4a03053d.jpg": "/online-store/static/media/table5.4a03053d.jpg",
+    "static/media/table6.2a23fd7a.jpg": "/online-store/static/media/table6.2a23fd7a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8a1b7d0.js",
+    "static/js/2.3d771749.chunk.js",
+    "static/js/main.73cd8e34.chunk.js"
+  ]
+}
