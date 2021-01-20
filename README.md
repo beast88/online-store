@@ -20,7 +20,7 @@ Part of The Odin Project section on React Routes located here:
 
 ### Frameworks
 
-*React JS
+* React JS
 
 ### Applied Skills
 

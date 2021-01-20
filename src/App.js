@@ -85,9 +85,9 @@ const App = () => {
 
       <Switch>
 
-        <Route exact path="/online-store" component={Home} />
-        <Route exact path="/shop" component={Shop} />
-        <Route path="/shop/:id" render={(props) => (
+        <Route exact path="/online-store/" component={Home} />
+        <Route exact path="/online-store/shop" component={Shop} />
+        <Route path="/online-store/shop/:id" render={(props) => (
                                   <Product 
                                     {...props} 
                                     quant={quant}

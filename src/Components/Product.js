@@ -41,7 +41,7 @@ const Product = (props) => {
 
 					</div>
 
-					<Link to={"/shop"}><button className="submit" onClick={() => {props.addToCart(item)}}>Add to Cart</button></Link>
+					<Link to={"/online-store/shop"}><button className="submit" onClick={() => {props.addToCart(item)}}>Add to Cart</button></Link>
 
 				</div>
 
