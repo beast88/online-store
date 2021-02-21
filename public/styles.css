@@ -6,8 +6,10 @@ body {
 	font-family: 'Hepta Slab', serif;
 	color: #2C3E50;
 	position: relative;
+	width: 100vw;
 	height: 100vh;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 a {
@@ -61,6 +63,7 @@ nav .nav-list {
 	width: 70%;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .nav-list li {
@@ -378,4 +381,23 @@ nav .nav-list {
 
 .hidden {
 	display: none;
+}
+
+@media screen and (max-width: 764px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	nav {
+		height: 10vh;
+		padding: 0 10px 0 10px;
+	}
+
+	.nav-list li {
+		font-size: 0.9rem;
+	}
+
+	.nav-list i {
+		font-size: 1.1rem;
+	}
 }
