@@ -22,7 +22,7 @@ const Nav = (props) => {
 				</li>
 
 				<li>
-					<a href="https://github.com/beast88/online-store" target="_blank" rel="noreferrer">
+					<a href="https://github.com/beast88/online-store" target="_blank" rel="noopener noreferrer">
 						<i className="fa fa-github"></i>
 					</a>
 				</li>
