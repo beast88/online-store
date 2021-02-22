@@ -75,7 +75,7 @@ const Products = [
 		id: 8,
 		categoryid: 2,
 		image: bookcase1,
-		name: 'Divandelignemokellaval',
+		name: 'Divandeligne',
 		price: 139.99
 	},
 	{
